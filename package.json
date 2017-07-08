@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "build/watch": "npm run build -- --watch",
+    "serve": "http-server docs -p 8080",
+    "start": "concurrently 'npm run build/watch' 'npm run serve'"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-transition-group": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "concurrently": "^3.5.0",
+    "css-loader": "^0.28.4",
+    "html-webpack-plugin": "^2.29.0",
+    "http-server": "^0.10.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.1.0"
+  }
+}
